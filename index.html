@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>yina's portfolio</title>
+  <meta name="description" content="Personal portfolio of Yina Gao: engineer, artist, and dreamer." />
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- icons -->
+  <link rel="icon" href="assets/icon.PNG" />
+  <link rel="apple-touch-icon" href="assets/icon.PNG" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav">
+    <a href="#" class="nav-logo">
+      yina gao
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about"    class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <!-- <li><a href="#writing"  class="nav-link">Writing</a></li> -->
+      <li><a href="#contact"  class="nav-link">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <p class="hero-eyebrow">Hello World, I'm</p>
+        <h1 class="hero-name">Yina Gao</h1>
+        <p class="hero-tagline">
+          Challenging problems demand solutions designed
+          rigourously and beautifully.
+        </p>
+        <div class="hero-links">
+          <a href="#projects" class="btn btn-primary">See my work</a>
+          <a href="https://github.com/yinagao" target="_blank" rel="noopener" class="btn btn-ghost">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+
+            GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-wrap">
+              <img src="assets/headshot.jpg" alt="Yina Gao" class="about-photo" />
+          </div>
+          <div class="about-text">
+            <h2 class="section-label">About</h2>
+            <p class="about-bio">
+              I'm an engineer based in <strong>Toronto, Canada</strong> graduating from
+              the Engineering Science program at the University of Toronto in April 2026. 
+              My current interests lie in <strong>machine learning</strong> and <strong>data science</strong> applications.
+            </p>
+            <p class="about-bio">
+              I also moonlight as a multi-passionate twenty-something expanding her horizons 
+              through travel, literature, making art, and language learning!
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Git</span>
+              <span class="tag">C</span>
+              <span class="tag">Amazon Web Services</span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="section-label">Projects</h2>
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-card-top">
+              <span class="project-badge ml">Machine Learning</span>
+            </div>
+            <h3 class="project-title">ML-assisted Pediatric Brain Tumour Diagnosis</h3>
+            <p class="project-desc">
+              My undergrad thesis project at SickKids Research Institute, where I'm applying CNNs
+              within a finetuning pipeline for pediatric brain tumour diagnosis using MRI scans. 
+            </p>
+            <a href="https://github.com/yinagao/thesis-brain-tumour/tree/main" target="_blank" rel="noopener" class="project-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              View Project
+            </a>
+          </article>
+
+                    <article class="project-card">
+            <div class="project-card-top">
+              <span class="project-badge ml">Machine Learning</span>
+            </div>
+            <h3 class="project-title">Predictive Modelling of Normative Spine Structure</h3>
+            <p class="project-desc">
+              Capstone project in collaboration with Sunnybrook Research Institute, using
+              Mutual Information, XGBoost, and Statistical Shape Modelling to model healthy spines based on patient demographics.
+            </p>
+            <a href="https://github.com/Holland-Bone-and-Joint-Bioengineering" target="_blank" rel="noopener" class="project-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              Private Project (Sensitive Data)
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-top">
+              <span class="project-badge ml">Machine Learning</span>
+            </div>
+            <h3 class="project-title">Music Generation with Transformer Mixture Density Models</h3>
+            <p class="project-desc">
+              I ran batch evaluations for musical melodies generated by MusicVAE and TransformerMDN and
+              made visualizations of the musical quality over sliding windows.
+            </p>
+            <a href="https://github.com/yinagao/vae-tmdn-music/blob/master/Music_Generation_Using_Autoencoders_and_Transformer_Mixture_Distribution_Models.pdf" target="_blank" rel="noopener" class="project-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              View Project
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+<section class="section experience" id="experience">
+  <div class="container">
+    <h2 class="section-label">Work</h2>
+    <div class="experience-card">
+
+      <div class="experience-item">
+        <div class="experience-logo">
+          <img src="assets/icons/xero-logo.svg" alt="Xero Logo" />
+        </div>
+        <div class="experience-info">
+          <h3 class="experience-company">Xero</h3>
+          <p class="experience-role">Applied Machine Learning Intern</p>
+          <p class="experience-desc">Researches, developed, and deployed NLP models and their evaluation tools for document understanding.</p>
+        </div>
+        <span class="experience-dates">May 2024 — August 2025</span>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-logo">
+          <svg viewBox="0 0 100 100" aria-label="WatXtract.AI">
+            <path d="M32.103 24.707a4.813 4.813 0 0 0-1.766 6.59l3.17 5.493l-3.613.74l-29.445 17l12.5 21.65l29.445-17l2.448-2.76l3.17 5.493a4.813 4.813 0 0 0 6.59 1.766l13.295-7.676a4.813 4.813 0 0 0 1.766-6.59l-3.17-5.492l3.613-.74l29.445-17l-12.5-21.651l-29.445 17l-2.448 2.76l-3.17-5.493a4.813 4.813 0 0 0-6.59-1.765zM7.279 56.36l25.98-15l7.5 12.99l-25.98 15zm51.961-30l25.981-15l7.5 12.99l-25.98 15zm11 38.554a7.45 7.45 0 0 1-9.14 5.313l-1.27 4.836c6.625 1.743 13.477-2.241 15.242-8.86zM58.51 79.886l-1.27 4.835c12.003 3.157 24.362-3.973 27.546-15.917l-4.83-1.286C77.47 76.842 67.921 82.361 58.51 79.886zm-2.577 9.665l-1.271 4.837c17.356 4.564 35.192-5.727 39.794-22.989l-4.83-1.288c-3.904 14.64-18.929 23.323-33.693 19.44z"/>
+          </svg>
+        </div>
+        <div class="experience-info">
+          <h3 class="experience-company">WatXtract.AI</h3>
+          <p class="experience-role">Machine Learning Software Intern</p>
+          <p class="experience-desc">Benchmarked models for 2D satellite image understanding and helped implement them into software.</p>
+        </div>
+        <span class="experience-dates">June 2023 — September 2023</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- writing (blog posts: coming soon) -->
+    <!-- <section class="section writing" id="writing">
+      <div class="container">
+        <h2 class="section-label">Writing</h2>
+        <div class="writing-list">
+
+          <a href="#" class="writing-item">
+            <div class="writing-meta">
+              <span class="writing-date">Jan 2025</span>
+              <span class="writing-tag">Tutorial</span>
+            </div>
+            <h3 class="writing-title">Article title goes here</h3>
+            <span class="writing-arrow">→</span>
+          </a>
+
+          <a href="#" class="writing-item">
+            <div class="writing-meta">
+              <span class="writing-date">Nov 2024</span>
+              <span class="writing-tag">Essay</span>
+            </div>
+            <h3 class="writing-title">Another article title goes here</h3>
+            <span class="writing-arrow">→</span>
+          </a>
+
+          <a href="#" class="writing-item">
+            <div class="writing-meta">
+              <span class="writing-date">Sep 2024</span>
+              <span class="writing-tag">Project</span>
+            </div>
+            <h3 class="writing-title">A third article or case study title</h3>
+            <span class="writing-arrow">→</span>
+          </a>
+
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container contact-inner">
+        <h2 class="contact-heading">Let's chat!</h2>
+        <p class="contact-sub">
+          I'm open to work, collaborations, or a good conversation.
+          The best way to reach me is by email.
+        </p>
+          <a href="mailto:yinagao2003@gmail.com" class="social-link email-link" aria-label="Email">
+            <svg viewBox="0 0 1920 1920" aria-hidden="true">
+              <path d="M1920 428.266v1189.54l-464.16-580.146-88.203 70.585 468.679 585.904H83.684l468.679-585.904-88.202-70.585L0 1617.805V428.265l959.944 832.441L1920 428.266ZM1919.932 226v52.627l-959.943 832.44L.045 278.628V226h1919.887Z" fill-rule="evenodd"/>
+            </svg>
+            email me
+          </a>
+
+        <div class="social-links">
+          <a href="https://github.com/yinagao" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+
+          <a href="https://linkedin.com/in/yina-gao" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          </a>
+        </div>
+          <p class="contact-email">yinagao2003@gmail.com</p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Yina Gao</span>
+      <span>Built with HTML, CSS &amp; care.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
